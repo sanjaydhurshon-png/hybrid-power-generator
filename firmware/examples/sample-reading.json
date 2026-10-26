@@ -1,0 +1,13 @@
+{
+  "device_id": "hybrid-esp32-01",
+  "timestamp": "2026-10-23T12:30:00Z",
+  "mode": "live",
+  "firmware_version": "1.0.0",
+  "sensors": {
+    "solar": { "voltage_v": null, "current_a": null, "power_w": null },
+    "wind": { "voltage_v": null, "current_a": null, "power_w": null },
+    "battery": { "voltage_v": 3.7, "current_a": null, "power_w": null, "soc_percent": null },
+    "load": { "voltage_v": null, "current_a": null, "power_w": null }
+  },
+  "sensor_status": { "ina219_a": false, "ina219_b": false }
+}

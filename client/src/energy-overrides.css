@@ -1,0 +1,612 @@
+.technical-note,
+.empty-state {
+  color: #a5b5b0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.empty-state {
+  padding: 24px 8px;
+  text-align: center;
+}
+
+.weather-controls,
+.mapping-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 14px;
+}
+
+.weather-controls {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.mapping-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 18px;
+}
+
+.weather-controls label,
+.mapping-grid label,
+.settings-field,
+.sim-select {
+  display: grid;
+  gap: 7px;
+  color: #9aaca7;
+  font-size: 11px;
+}
+
+.weather-controls input,
+.mapping-grid select,
+.settings-field input,
+.sim-select select {
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid #33484a;
+  border-radius: 7px;
+  background: #101d21;
+  color: #e7f0ed;
+}
+
+.saved-note {
+  margin-left: 10px;
+  color: #63d6a3;
+  font-size: 11px;
+}
+
+.location-status {
+  margin: -4px 2px 14px;
+  color: #81938f;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.alert-source {
+  display: block;
+  margin-top: 5px;
+  color: #81938f;
+  font-size: 10px;
+}
+
+.range-controls-wrap {
+  display: grid;
+  gap: 8px;
+}
+
+.range-controls-wrap .range-toggle {
+  flex-wrap: wrap;
+}
+
+.experiment-panel {
+  margin-top: 14px;
+}
+
+.experiment-form {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr auto;
+  align-items: end;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.experiment-form label {
+  display: grid;
+  gap: 6px;
+  color: #9aaca7;
+  font-size: 11px;
+}
+
+.experiment-form input,
+.experiment-form textarea {
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid #33484a;
+  border-radius: 7px;
+  background: #101d21;
+  color: #e7f0ed;
+  resize: vertical;
+}
+
+.range-dates {
+  display: flex;
+  gap: 7px;
+}
+
+.range-dates label {
+  display: grid;
+  gap: 4px;
+  color: #91a49e;
+  font-size: 9px;
+}
+
+.range-dates input {
+  min-width: 0;
+  padding: 6px;
+  border: 1px solid #33484a;
+  border-radius: 6px;
+  background: #101d21;
+  color: #e7f0ed;
+  font-size: 10px;
+}
+
+.forecast-confidence {
+  margin: 14px 0;
+  padding: 4px 17px;
+  border: 1px solid #263a3e;
+  border-radius: 10px;
+  background: rgba(19, 33, 38, 0.7);
+}
+
+.export-actions {
+  display: grid;
+  justify-items: end;
+  gap: 10px;
+}
+
+.status-row > span:first-child {
+  min-width: 0;
+}
+
+.mobile-menu {
+  flex: none;
+}
+
+.monitor-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-mark {
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.dashboard-live-metrics {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.dashboard-device-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  color: #a5b5b0;
+  font-size: 12px;
+}
+
+.dashboard-device-status strong {
+  color: var(--text);
+}
+
+.dashboard-empty {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.dashboard-empty h3,
+.dashboard-empty p {
+  margin: 0;
+}
+
+.dashboard-empty p {
+  max-width: 560px;
+  color: #a5b5b0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.dashboard-empty small {
+  color: #81938f;
+  font-size: 11px;
+}
+
+.dashboard-empty-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 14px;
+  background: #20343a;
+  color: #80a69a;
+}
+
+.history-controls {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 14px;
+}
+
+.history-controls label {
+  display: grid;
+  min-width: 180px;
+  gap: 6px;
+  color: #9aaca7;
+  font-size: 11px;
+}
+
+.history-controls select {
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid #33484a;
+  border-radius: 7px;
+  background: #101d21;
+  color: #e7f0ed;
+}
+
+.daily-history-chart {
+  height: 320px;
+  padding: 18px;
+}
+
+.daily-history-list {
+  margin-top: 14px;
+  padding: 8px 16px;
+}
+
+.history-table-head,
+.history-table-row {
+  display: grid;
+  grid-template-columns: 1.2fr repeat(3, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 10px 4px;
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+}
+
+.history-table-head {
+  color: #90a39d;
+}
+
+.history-table-row:last-child {
+  border-bottom: 0;
+}
+
+.pulse-muted {
+  opacity: 0.45;
+}
+
+@media (max-width: 700px) {
+  .dashboard-live-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .history-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .history-controls label {
+    min-width: 0;
+  }
+
+  .history-table-head,
+  .history-table-row {
+    grid-template-columns: 1.2fr repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    font-size: 9px;
+  }
+}
+
+.onboarding-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(4, 12, 14, 0.76);
+  backdrop-filter: blur(8px);
+}
+
+.onboarding-dialog {
+  width: min(100%, 560px);
+  padding: 30px;
+  border: 1px solid #34534e;
+  border-radius: 12px;
+  background: #132126;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.4);
+}
+
+.onboarding-dialog h2 {
+  margin: 10px 0 22px;
+  color: #e7f0ed;
+  font-size: 24px;
+}
+
+.onboarding-options,
+.onboarding-fields {
+  display: grid;
+  gap: 10px;
+}
+
+.onboarding-choice {
+  display: grid;
+  gap: 6px;
+  padding: 15px;
+  border: 1px solid #2d4445;
+  border-radius: 8px;
+  background: #172a2f;
+  text-align: left;
+}
+
+.onboarding-choice.selected {
+  border-color: #63d6a3;
+  box-shadow: inset 3px 0 #63d6a3;
+}
+
+.onboarding-choice span,
+.onboarding-fields p,
+.onboarding-footer > span {
+  color: #92a59f;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.onboarding-fields label {
+  display: grid;
+  gap: 7px;
+  color: #bdccc7;
+  font-size: 12px;
+}
+
+.onboarding-fields input,
+.onboarding-fields select {
+  min-height: 40px;
+  padding: 8px 10px;
+  border: 1px solid #33484a;
+  border-radius: 7px;
+  background: #101d21;
+  color: #e7f0ed;
+}
+
+.onboarding-footer,
+.onboarding-footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.onboarding-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #263a3e;
+}
+
+html:not(.dark) .onboarding-dialog {
+  background: #fff;
+  border-color: #cbd9d4;
+}
+
+html:not(.dark) .onboarding-dialog h2 {
+  color: #19332e;
+}
+
+html:not(.dark) .onboarding-choice,
+html:not(.dark) .onboarding-fields input,
+html:not(.dark) .onboarding-fields select {
+  background: #f8fbf9;
+  color: #19332e;
+  border-color: #cbd9d4;
+}
+
+html:not(.dark) .onboarding-choice span,
+html:not(.dark) .onboarding-fields p,
+html:not(.dark) .onboarding-footer > span {
+  color: #526964;
+}
+
+html:not(.dark) body {
+  background: #e5e6e2;
+  color: #293331;
+}
+
+html:not(.dark) .sidebar,
+html:not(.dark) .topbar {
+  background: rgba(234, 235, 231, 0.98);
+  border-color: #cdd0ca;
+}
+
+html:not(.dark) .sidebar {
+  box-shadow: 3px 0 14px rgba(30, 38, 34, 0.04);
+}
+
+html:not(.dark) .nav-item,
+html:not(.dark) .metric-label,
+html:not(.dark) .section-title p,
+html:not(.dark) .technical-note,
+html:not(.dark) .weather-controls label,
+html:not(.dark) .mapping-grid label,
+html:not(.dark) .settings-field {
+  color: #526964;
+}
+
+html:not(.dark) .nav-item:hover,
+html:not(.dark) .icon-button,
+html:not(.dark) .mobile-menu,
+html:not(.dark) .sensor-cell,
+html:not(.dark) .metric-card,
+html:not(.dark) .panel {
+  background: #eff0ec;
+  border-color: #d0d3cd;
+  color: #293331;
+}
+
+html:not(.dark) .hero {
+  background: linear-gradient(110deg, #e3e9e3 0%, #e5e8e5 55%, #e2e6e8 100%);
+  border-color: #cbd1cc;
+}
+
+html:not(.dark) .hero h2,
+html:not(.dark) .section-title h2,
+html:not(.dark) .chart-head strong,
+html:not(.dark) .metric-value,
+html:not(.dark) .chat-head strong {
+  color: #293331;
+}
+
+html:not(.dark) .hero p,
+html:not(.dark) .last-seen,
+html:not(.dark) .sensor-cell span {
+  color: #536b65;
+}
+
+html:not(.dark) .weather-controls input,
+html:not(.dark) .history-controls select,
+html:not(.dark) .mapping-grid select,
+html:not(.dark) .settings-field input,
+html:not(.dark) .sim-select select,
+html:not(.dark) .experiment-form input,
+html:not(.dark) .experiment-form textarea,
+html:not(.dark) .range-dates input {
+  background: #e7e9e5;
+  color: #293331;
+  border-color: #c8cdc7;
+}
+
+html:not(.dark) .chat-panel {
+  background: #e9ebe7;
+  border-color: #cbd0ca;
+  box-shadow: 0 14px 38px rgba(30, 38, 34, 0.16);
+}
+
+html:not(.dark) .chat-context {
+  background: #e1e5df;
+  color: #53615b;
+}
+
+html:not(.dark) .chat-message.assistant {
+  background: #dfe3dd;
+  color: #293331;
+}
+
+html:not(.dark) .chat-message.user {
+  background: #ceded1;
+  color: #24352b;
+}
+
+html:not(.dark) .chat-input,
+html:not(.dark) .chat-head {
+  border-color: #cbd0ca;
+}
+
+html:not(.dark) .chat-input input {
+  background: #e1e4df;
+  border-color: #c7ccc6;
+  color: #293331;
+}
+
+html:not(.dark) .forecast-confidence {
+  background: #e9ebe7;
+  border-color: #cbd0ca;
+}
+
+html:not(.dark) .history-controls select {
+  background: #e7e9e5;
+  color: #293331;
+}
+
+html:not(.dark) .location-status,
+html:not(.dark) .history-table-head {
+  color: #59645e;
+}
+
+html:not(.dark) .nav-item.active {
+  background: #d9e1da;
+  color: #293c31;
+}
+
+@media (max-width: 800px) {
+  .weather-controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 8;
+    width: min(290px, 86vw);
+    padding: 20px 14px;
+    overflow-y: auto;
+    transform: translateX(-105%);
+    visibility: hidden;
+    transition: transform 180ms ease, visibility 180ms ease;
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
+    visibility: visible;
+    box-shadow: 14px 0 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .sidebar .brand {
+    padding: 0 9px 25px;
+  }
+
+  .sidebar .brand > div:last-child,
+  .sidebar .sidebar-label,
+  .sidebar .nav-item span,
+  .sidebar .nav-arrow,
+  .sidebar .backend-mini div,
+  .sidebar .sidebar-foot {
+    display: block;
+  }
+
+  .sidebar .nav-item {
+    justify-content: flex-start;
+  }
+
+  .weather-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .export-actions {
+    justify-items: start;
+  }
+
+  .range-dates {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-controls,
+  .mapping-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .weather-controls .control-button {
+    justify-content: center;
+  }
+
+  .chat-panel {
+    max-height: min(470px, calc(100dvh - 24px));
+  }
+}
+
+@media (max-width: 800px) {
+  .experiment-form {
+    grid-template-columns: 1fr;
+  }
+
+  .monitor-actions {
+    flex-wrap: wrap;
+  }
+}
